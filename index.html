@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--CSS Layout - The z-index property
+    
+        The z-index property specifies the stack order of an element.
+    -->
+
+    <!--The z-index Property
+    
+        When elements are positioned, they can overlap other elements.
+
+        The z-index property specifies the stack order of an element (which
+        elemnt should be placed in fornt of, or behind, the orthers).
+
+        An element can have a positive or negative stack order:
+    -->
+
+    <!--This is a heading
+    
+        Becuase the image has a z-index of -1, it will be placed behide the text.
+    -->
+
+    <h1>This is a heading</h1>
+    <img src="img_tree.png">
+    <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+    <hr>
+
+    <!--Note: z-index only works on postioned elements (position: absolute,
+        position: relative, position: fixed, or position: stickly) and flex items
+        (elements that are direct children of display: flex elements).
+    -->
+
+    <!--Another z-index Example
+        
+        Example
+        Here we see that an element with greater stack order is always above an
+        element with a lower stack order
+    -->
+
+    <div class="container">
+        <div class="black-box">Black box</div>
+        <div class="gray-box">Gray box</div>
+        <div class="green-box">Green box</div>
+    </div>
+
+    <!--Without z-index
+    
+        If two positioned elements overlap each other without a z-index specified,
+        the element defined last in the HTML code will be shown on top.
+
+        Example
+        Same example as above, but here with no z-index specified:
+    -->
+
+    <div class="container">
+        <div class="black-box">Black box</div>
+        <div class="gray-box">Gray box</div>
+        <div class="green-box">Green box</div>
+    </div>
+
+    <!--CSS Property
+    
+        z-index         Sets the stack order of an element
+    -->
+</body>
+</html>
